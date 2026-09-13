@@ -42,64 +42,54 @@
     </div>
   </section>
 
-  <!-- FEATURED CAROUSEL -->
+  <!-- CATEGORY SHORTCUTS -->
   <section style="padding-bottom:40px;">
     <div class="wrap">
       <div class="sec-head" style="margin-bottom:26px;">
-        <span class="eyebrow">Featured</span>
-        <h2>Highlights from our range</h2>
+        <span class="eyebrow">Browse by Category</span>
+        <h2>Jump straight to what you need</h2>
       </div>
-      <div class="carousel" aria-roledescription="carousel">
-        <div class="carousel-frame" id="carFrame">
-          <div class="slide active">
-            <div class="s-photo"><img src="images/jacket-bsf.png" alt="BSF camouflage field jacket" /></div>
-            <div class="s-text">
-              <span class="s-cat">Uniforms &amp; Jackets</span>
-              <h3>BSF Field Jacket</h3>
-              <p>BSF-print combat jacket in nylon waterproof fabric with hood and full sleeves — built for everyday service wear.</p>
-              <a class="btn btn-primary" href="https://wa.me/919419288058?text=I%27d%20like%20a%20quote%20for%3A%20BSF%20Field%20Jacket" target="_blank" rel="noopener">Enquire on WhatsApp</a>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="s-photo"><img src="images/crpf-harness-bp-jacket.jpg" alt="CRPF harness bulletproof jacket" /></div>
-            <div class="s-text">
-              <span class="s-cat">Bulletproof &amp; Protective</span>
-              <h3>CRPF Harness BP Jacket</h3>
-              <p>PU-coated protective harness jacket with reinforced construction — our core defence product line.</p>
-              <a class="btn btn-primary" href="https://wa.me/919419288058?text=I%27d%20like%20a%20quote%20for%3A%20CRPF%20Harness%20BP%20Jacket" target="_blank" rel="noopener">Enquire on WhatsApp</a>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="s-photo"><img src="images/helmet.jpg" alt="Safety military helmet" /></div>
-            <div class="s-text">
-              <span class="s-cat">Protective Gear</span>
-              <h3>Safety Military Helmet</h3>
-              <p>Protective military helmet for field and tactical use — part of our full protective-gear range.</p>
-              <a class="btn btn-primary" href="https://wa.me/919419288058?text=I%27d%20like%20a%20quote%20for%3A%20Safety%20Military%20Helmet" target="_blank" rel="noopener">Enquire on WhatsApp</a>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="s-photo"><img src="images/jacket-winter-reflector.png" alt="Winter reflector jacket" /></div>
-            <div class="s-text">
-              <span class="s-cat">Winter Wear</span>
-              <h3>Winter Reflector Jacket</h3>
-              <p>Insulated, full-sleeve winter jacket with reflective strips for cold-weather and industrial field use.</p>
-              <a class="btn btn-primary" href="https://wa.me/919419288058?text=I%27d%20like%20a%20quote%20for%3A%20Winter%20Reflector%20Jacket" target="_blank" rel="noopener">Enquire on WhatsApp</a>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="s-photo"><img src="images/sleeping-bag-4ply.jpg" alt="4 ply sleeping bag" /></div>
-            <div class="s-text">
-              <span class="s-cat">Sleeping Bags</span>
-              <h3>4-Ply Sleeping Bag</h3>
-              <p>Heavy-duty 7-foot sleeping bag for field and cold-weather deployment, made in India.</p>
-              <a class="btn btn-primary" href="https://wa.me/919419288058?text=I%27d%20like%20a%20quote%20for%3A%204%20Ply%20Sleeping%20Bag" target="_blank" rel="noopener">Enquire on WhatsApp</a>
-            </div>
-          </div>
-          <button class="car-btn prev" id="carPrev" aria-label="Previous slide">‹</button>
-          <button class="car-btn next" id="carNext" aria-label="Next slide">›</button>
-        </div>
-        <div class="car-dots" id="carDots"></div>
+      <div class="cat-tiles" id="catTiles">
+        <button class="cat-tile" data-filter="prot">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></span>
+          <span class="t-name">Bulletproof &amp; Protective</span><span class="t-count">7 products</span>
+        </button>
+        <button class="cat-tile" data-filter="gear">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0-6 6v3l-2 4h16l-2-4V9a6 6 0 0 0-6-6z"/><path d="M9 18a3 3 0 0 0 6 0"/></svg></span>
+          <span class="t-name">Protective Gear</span><span class="t-count">5 products</span>
+        </button>
+        <button class="cat-tile" data-filter="jackets">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M6 3l3 2 3-1 3 1 3-2v7l-3 1v9H9v-9L6 10z"/></svg></span>
+          <span class="t-name">Uniforms &amp; Jackets</span><span class="t-count">16 products</span>
+        </button>
+        <button class="cat-tile" data-filter="rain">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 10a6 6 0 0 1-12 0c0-3 3-6 6-10z"/></svg></span>
+          <span class="t-name">Rainwear</span><span class="t-count">3 products</span>
+        </button>
+        <button class="cat-tile" data-filter="track">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M6 6h12v4H6z"/><path d="M8 10v10h8V10"/><path d="M10 14h4"/></svg></span>
+          <span class="t-name">Track Suits</span><span class="t-count">5 products</span>
+        </button>
+        <button class="cat-tile" data-filter="bags">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M5 8h14v12H5z"/><path d="M9 8V5a3 3 0 0 1 6 0v3"/></svg></span>
+          <span class="t-name">Bags &amp; Kit</span><span class="t-count">5 products</span>
+        </button>
+        <button class="cat-tile" data-filter="sleep">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M3 12c3-4 15-4 18 0-3 4-15 4-18 0z"/><path d="M12 8v8"/></svg></span>
+          <span class="t-name">Sleeping Bags</span><span class="t-count">3 products</span>
+        </button>
+        <button class="cat-tile" data-filter="camp">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 4L3 20h18z"/><path d="M12 4v16"/></svg></span>
+          <span class="t-name">Tents &amp; Camp</span><span class="t-count">1 product</span>
+        </button>
+        <button class="cat-tile" data-filter="food">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M4 8l8-4 8 4-8 4z"/><path d="M4 8v8l8 4 8-4V8"/></svg></span>
+          <span class="t-name">Rations</span><span class="t-count">1 product</span>
+        </button>
+        <button class="cat-tile" data-filter="power">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M13 3L5 13h6l-1 8 8-10h-6z"/></svg></span>
+          <span class="t-name">Generators</span><span class="t-count">8 products</span>
+        </button>
       </div>
     </div>
   </section>

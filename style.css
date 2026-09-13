@@ -166,6 +166,22 @@ header.nav {
 }
 .car-dots button.active { background: var(--accent); transform: scale(1.35); }
 
+/* ---------- CATEGORY SHORTCUT TILES ---------- */
+.cat-tiles { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+@media (max-width: 900px) { .cat-tiles { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 560px) { .cat-tiles { grid-template-columns: repeat(2, 1fr); } }
+.cat-tile {
+  display: flex; flex-direction: column; gap: 10px; align-items: flex-start;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  padding: 18px 18px 16px; cursor: pointer; text-align: left; font: inherit; color: var(--ink);
+  box-shadow: var(--shadow); transition: transform .14s ease, border-color .14s ease;
+}
+.cat-tile:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+.cat-tile .ci { width: 40px; height: 40px; border-radius: 9px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); }
+.cat-tile .ci svg { width: 23px; height: 23px; stroke: currentColor; fill: none; stroke-width: 1.7; }
+.cat-tile .t-name { font-weight: 700; font-size: 1rem; line-height: 1.15; }
+.cat-tile .t-count { font-size: .82rem; color: var(--ink-soft); font-weight: 600; margin-top: auto; }
+
 /* ---------- FILTER BAR ---------- */
 .filter-bar { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 34px; }
 .filter-btn {
