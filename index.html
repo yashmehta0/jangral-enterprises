@@ -316,6 +316,18 @@
   </div>
 </footer>
 
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Product photo viewer">
+  <button class="lb-nav prev" id="lbPrev" aria-label="Previous photo">‹</button>
+  <button class="lb-nav next" id="lbNext" aria-label="Next photo">›</button>
+  <div class="lb-stage">
+    <button class="lb-close" id="lbClose" aria-label="Close photo viewer">×</button>
+    <img class="lb-img" id="lbImg" src="" alt="" />
+    <div class="lb-caption" id="lbCap"></div>
+    <div class="lb-thumbs" id="lbThumbs"></div>
+  </div>
+</div>
+
 <script src="theme.js"></script>
 <script src="app.js"></script>
 </body>
