@@ -40,6 +40,24 @@
   restart();
 })();
 
+// ===== Per-product photo galleries (thumbnail swap) =====
+(function () {
+  document.querySelectorAll('#prodGrid .pcard').forEach(function (card) {
+    var thumbs = card.querySelector('.thumbs');
+    if (!thumbs) return;
+    var main = card.querySelector('.photo img');
+    thumbs.addEventListener('click', function (e) {
+      var btn = e.target.closest('.thumb');
+      if (!btn) return;
+      var img = btn.querySelector('img');
+      main.src = img.src;
+      main.alt = img.alt || main.alt;
+      thumbs.querySelectorAll('.thumb').forEach(function (t) { t.classList.remove('active'); });
+      btn.classList.add('active');
+    });
+  });
+})();
+
 // ===== Product filters =====
 (function () {
   var bar = document.getElementById('filterBar');
