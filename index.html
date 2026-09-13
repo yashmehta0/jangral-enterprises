@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Jangral Enterprises — Defence, Police & Paramilitary Clothing Manufacturer</title>
-<meta name="description" content="Jangral Enterprises, Jammu — manufacturer of defence, police, paramilitary & ordnance clothing since 2006. Bulletproof harnesses, army uniforms, tactical jackets, kit bags, sleeping bags & more." />
+<meta name="description" content="Jangral Enterprises, Jammu — manufacturer of defence, police, paramilitary & ordnance clothing since 2006. Bulletproof gear, uniforms, tactical apparel, rainwear, kit bags, sleeping bags, tents, rations & generators." />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,7 +12,7 @@
 <header class="nav">
   <div class="wrap nav-inner">
     <a href="index.html" class="brand">
-      <span class="mark">JE</span>
+      <span class="mark"><img src="images/logo-mark.png" alt="Jangral Enterprises logo" /></span>
       <span class="name">Jangral Enterprises<span>Defence &amp; Tactical Clothing</span></span>
     </a>
     <nav class="nav-links">
@@ -34,7 +34,7 @@
     <div class="hero-inner">
       <span class="eyebrow">Manufacturer · Est. 2006 · Jammu, India</span>
       <h1>Defence, Police &amp; <em>Paramilitary</em> Clothing, Built to Serve.</h1>
-      <p class="lede">Bulletproof jacket harnesses, army &amp; police uniforms, tactical apparel, field kit and more — manufactured to order and supplied across India for nearly two decades.</p>
+      <p class="lede">Bulletproof gear, uniforms, tactical apparel, rainwear, field kit, tents, rations and more — manufactured to order and supplied across India for nearly two decades.</p>
       <div class="hero-cta">
         <a class="btn btn-wa" href="https://wa.me/919419288058?text=Hello%20Jangral%20Enterprises%2C%20I%27d%20like%20to%20enquire%20about%20your%20products." target="_blank" rel="noopener">Chat on WhatsApp</a>
         <a class="btn btn-ghost" href="contact.html">Request a Quote</a>
@@ -61,21 +61,21 @@
             </div>
           </div>
           <div class="slide">
-            <div class="s-photo"><img src="images/jacket-traffic-police.png" alt="J&K traffic police jacket" /></div>
-            <div class="s-text">
-              <span class="s-cat">Police</span>
-              <h3>Traffic Police Jacket</h3>
-              <p>High-visibility traffic police jacket produced to departmental specification and colour requirements.</p>
-              <a class="btn btn-primary" href="https://wa.me/919419288058?text=I%27d%20like%20a%20quote%20for%3A%20Traffic%20Police%20Jacket" target="_blank" rel="noopener">Enquire on WhatsApp</a>
-            </div>
-          </div>
-          <div class="slide">
             <div class="s-photo"><img src="images/crpf-harness-bp-jacket.jpg" alt="CRPF harness bulletproof jacket" /></div>
             <div class="s-text">
               <span class="s-cat">Bulletproof &amp; Protective</span>
               <h3>CRPF Harness BP Jacket</h3>
               <p>PU-coated protective harness jacket with reinforced construction — our core defence product line.</p>
               <a class="btn btn-primary" href="https://wa.me/919419288058?text=I%27d%20like%20a%20quote%20for%3A%20CRPF%20Harness%20BP%20Jacket" target="_blank" rel="noopener">Enquire on WhatsApp</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="s-photo"><img src="images/helmet.jpg" alt="Safety military helmet" /></div>
+            <div class="s-text">
+              <span class="s-cat">Protective Gear</span>
+              <h3>Safety Military Helmet</h3>
+              <p>Protective military helmet for field and tactical use — part of our full protective-gear range.</p>
+              <a class="btn btn-primary" href="https://wa.me/919419288058?text=I%27d%20like%20a%20quote%20for%3A%20Safety%20Military%20Helmet" target="_blank" rel="noopener">Enquire on WhatsApp</a>
             </div>
           </div>
           <div class="slide">
@@ -110,49 +110,87 @@
       <div class="sec-head">
         <span class="eyebrow">Our Products</span>
         <h2>The full range</h2>
-        <p>Filter by category. Every item is manufactured to order in your required colours, sizes and specifications. Tap <strong>Enquire</strong> to message us on WhatsApp. <em>Prices shown are indicative — confirm current bulk pricing on enquiry.</em></p>
+        <p>Filter by category. Every item is manufactured to order in your required colours, sizes and specifications. Tap a photo to zoom, or <strong>Enquire</strong> to message us on WhatsApp. <em>Prices are indicative — confirm current bulk pricing on enquiry.</em></p>
       </div>
 
       <div class="filter-bar" id="filterBar" role="tablist" aria-label="Product categories">
         <button class="filter-btn active" data-filter="all">All Products</button>
-        <button class="filter-btn" data-filter="protective">Bulletproof &amp; Protective</button>
+        <button class="filter-btn" data-filter="prot">Bulletproof &amp; Protective</button>
+        <button class="filter-btn" data-filter="gear">Protective Gear</button>
         <button class="filter-btn" data-filter="jackets">Uniforms &amp; Jackets</button>
-        <button class="filter-btn" data-filter="tracksuits">Track Suits</button>
+        <button class="filter-btn" data-filter="rain">Rainwear</button>
+        <button class="filter-btn" data-filter="track">Track Suits</button>
         <button class="filter-btn" data-filter="bags">Bags &amp; Kit</button>
-        <button class="filter-btn" data-filter="sleeping">Sleeping Bags</button>
+        <button class="filter-btn" data-filter="sleep">Sleeping Bags</button>
+        <button class="filter-btn" data-filter="camp">Tents &amp; Camp</button>
+        <button class="filter-btn" data-filter="food">Rations</button>
         <button class="filter-btn" data-filter="power">Generators</button>
       </div>
 
       <div class="prod-grid" id="prodGrid">
 
-        <!-- PROTECTIVE -->
-        <article class="pcard" data-cat="protective">
+        <!-- ===== BULLETPROOF & PROTECTIVE ===== -->
+        <article class="pcard" data-cat="prot">
           <div class="photo"><img src="images/crpf-harness-bp-jacket.jpg" alt="CRPF harness bulletproof jacket" loading="lazy" /></div>
           <div class="body"><span class="cat">Bulletproof</span><h3>CRPF Harness BP Jacket</h3><p>PU-coated, green, sleeveless harness bulletproof vest.</p><div class="price">₹1,275 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20CRPF%20Harness%20BP%20Jacket" target="_blank" rel="noopener">Enquire →</a></div>
         </article>
-        <article class="pcard" data-cat="protective">
+        <article class="pcard" data-cat="prot">
+          <div class="photo"><img src="images/bp-vests.jpg" alt="Bulletproof vest" loading="lazy" /></div>
+          <div class="body"><span class="cat">Bulletproof</span><h3>Bulletproof Vest</h3><p>Protective bullet-resistant vest for police &amp; paramilitary.</p><div class="price">₹950 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Bulletproof%20Vest" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+        <article class="pcard" data-cat="prot">
+          <div class="photo"><img src="images/bp-patka.jpg" alt="Bulletproof patka head protection" loading="lazy" /></div>
+          <div class="body"><span class="cat">Bulletproof</span><h3>Bulletproof Patka</h3><p>Protective head-gear (patka) for tactical head protection.</p><div class="price">₹1,450 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Bulletproof%20Patka" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+        <article class="pcard" data-cat="prot">
+          <div class="photo"><img src="images/tactical-vest.jpg" alt="Tactical vest" loading="lazy" /></div>
+          <div class="body"><span class="cat">Tactical</span><h3>Tactical Vest</h3><p>Load-bearing tactical vest with pouches for field kit.</p><div class="price">₹1,650 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Tactical%20Vest" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+        <article class="pcard" data-cat="prot">
           <div class="photo"><img src="images/bulletproof-military-jacket.jpg" alt="Bulletproof military jacket" loading="lazy" /></div>
           <div class="body"><span class="cat">Bulletproof</span><h3>Bulletproof Military Jacket</h3><p>PVC-coated, green, sleeveless protective military jacket.</p><div class="price">₹950 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Bulletproof%20Military%20Jacket" target="_blank" rel="noopener">Enquire →</a></div>
         </article>
-        <article class="pcard" data-cat="protective">
+        <article class="pcard" data-cat="prot">
           <div class="photo"><img src="images/sleeveless-bp-harness.jpg" alt="Sleeveless harness bulletproof jacket" loading="lazy" /></div>
           <div class="body"><span class="cat">Bulletproof</span><h3>Sleeveless BP Harness</h3><p>PVC-coated sleeveless harness for bulletproof jackets.</p><div class="price">₹950 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Sleeveless%20BP%20Harness" target="_blank" rel="noopener">Enquire →</a></div>
         </article>
-        <article class="pcard" data-cat="protective">
+        <article class="pcard" data-cat="prot">
           <div class="photo"><img src="images/full-sleeve-bp-jacket.jpg" alt="Full sleeve bulletproof jacket" loading="lazy" /></div>
           <div class="body"><span class="cat">Bulletproof</span><h3>Full Sleeve BP Jacket</h3><p>PU-coated, green, full-sleeve bulletproof jacket.</p><div class="price">₹950 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Full%20Sleeve%20BP%20Jacket" target="_blank" rel="noopener">Enquire →</a></div>
         </article>
 
-        <!-- JACKETS & UNIFORMS -->
+        <!-- ===== PROTECTIVE GEAR ===== -->
+        <article class="pcard" data-cat="gear">
+          <div class="photo"><img src="images/helmet.jpg" alt="Safety military helmet" loading="lazy" /></div>
+          <div class="body"><span class="cat">Gear</span><h3>Safety Military Helmet</h3><p>Protective helmet for field and tactical use.</p><div class="price">₹1,350 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Safety%20Military%20Helmet" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+        <article class="pcard" data-cat="gear">
+          <div class="photo"><img src="images/knee-elbow-pads.jpg" alt="Military tactical knee and elbow pads" loading="lazy" /></div>
+          <div class="body"><span class="cat">Gear</span><h3>Knee &amp; Elbow Pads</h3><p>Tactical knee and elbow protection pads (set).</p><div class="price">₹1,250 <span>/ set*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Knee%20and%20Elbow%20Pads" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+        <article class="pcard" data-cat="gear">
+          <div class="photo"><img src="images/anklet.jpg" alt="Military synthetic anklet" loading="lazy" /></div>
+          <div class="body"><span class="cat">Gear</span><h3>Military Anklet</h3><p>Synthetic anklets (puttees) for service dress.</p><div class="price">₹190 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Military%20Anklet" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+        <article class="pcard" data-cat="gear">
+          <div class="photo"><img src="images/snow-gaiters.jpg" alt="Waterproof snow gaiters" loading="lazy" /></div>
+          <div class="body"><span class="cat">Gear</span><h3>Waterproof Snow Gaiters</h3><p>Waterproof gaiters for snow and high-altitude terrain.</p><div class="price">On request</div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Snow%20Gaiters" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+        <article class="pcard" data-cat="gear">
+          <div class="photo"><img src="images/cap-rksk.jpg" alt="Field cap" loading="lazy" /></div>
+          <div class="body"><span class="cat">Gear</span><h3>Field Cap</h3><p>Service field cap in required colours.</p><div class="price">₹59 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Field%20Cap" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+
+        <!-- ===== UNIFORMS & JACKETS ===== -->
         <article class="pcard" data-cat="jackets">
           <div class="photo">
             <span class="photo-badge">◧ 3 photos</span>
             <img src="images/jacket-bsf.png" alt="BSF field jacket" loading="lazy" />
-          </div>
-          <div class="thumbs">
-            <button class="thumb active" aria-label="View photo 1"><img src="images/jacket-bsf.png" alt="BSF jacket front" /></button>
-            <button class="thumb" aria-label="View photo 2"><img src="images/jacket-bsf-2.png" alt="BSF jacket open lining" /></button>
-            <button class="thumb" aria-label="View photo 3"><img src="images/jacket-bsf-3.png" alt="BSF jacket detail" /></button>
+            <div class="thumbs">
+              <button class="thumb active" aria-label="View photo 1"><img src="images/jacket-bsf.png" alt="BSF jacket front" /></button>
+              <button class="thumb" aria-label="View photo 2"><img src="images/jacket-bsf-2.png" alt="BSF jacket open lining" /></button>
+              <button class="thumb" aria-label="View photo 3"><img src="images/jacket-bsf-3.png" alt="BSF jacket detail" /></button>
+            </div>
           </div>
           <div class="body"><span class="cat">Jacket</span><h3>BSF Field Jacket</h3><p>BSF-print combat jacket, nylon waterproof, full sleeve, hooded.</p><div class="price">₹1,950 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20BSF%20Field%20Jacket" target="_blank" rel="noopener">Enquire →</a></div>
         </article>
@@ -160,11 +198,11 @@
           <div class="photo">
             <span class="photo-badge">◧ 3 photos</span>
             <img src="images/jacket-crpf.png" alt="CRPF jacket" loading="lazy" />
-          </div>
-          <div class="thumbs">
-            <button class="thumb active" aria-label="View photo 1"><img src="images/jacket-crpf.png" alt="CRPF jacket front" /></button>
-            <button class="thumb" aria-label="View photo 2"><img src="images/jacket-crpf-2.png" alt="CRPF jacket back" /></button>
-            <button class="thumb" aria-label="View photo 3"><img src="images/jacket-crpf-3.png" alt="CRPF jacket detail" /></button>
+            <div class="thumbs">
+              <button class="thumb active" aria-label="View photo 1"><img src="images/jacket-crpf.png" alt="CRPF jacket front" /></button>
+              <button class="thumb" aria-label="View photo 2"><img src="images/jacket-crpf-2.png" alt="CRPF jacket back" /></button>
+              <button class="thumb" aria-label="View photo 3"><img src="images/jacket-crpf-3.png" alt="CRPF jacket detail" /></button>
+            </div>
           </div>
           <div class="body"><span class="cat">Jacket</span><h3>CRPF Jacket</h3><p>CRPF-print nylon jacket, full sleeve with hood.</p><div class="price">₹1,950 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20CRPF%20Jacket" target="_blank" rel="noopener">Enquire →</a></div>
         </article>
@@ -193,29 +231,75 @@
           <div class="body"><span class="cat">Winter</span><h3>Winter Reflector Jacket</h3><p>Insulated full-sleeve jacket with reflective strips.</p><div class="price">₹1,550 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Winter%20Reflector%20Jacket" target="_blank" rel="noopener">Enquire →</a></div>
         </article>
         <article class="pcard" data-cat="jackets">
+          <div class="photo"><img src="images/fur-jacket.jpg" alt="Collar neck fur jacket" loading="lazy" /></div>
+          <div class="body"><span class="cat">Winter</span><h3>Collar Neck Fur Jacket</h3><p>Fur-lined collar jacket for cold-weather wear.</p><div class="price">₹650 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Collar%20Neck%20Fur%20Jacket" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+        <article class="pcard" data-cat="jackets">
+          <div class="photo"><img src="images/safety-jacket.jpg" alt="High visibility safety jacket" loading="lazy" /></div>
+          <div class="body"><span class="cat">Hi-Vis</span><h3>Safety Jacket</h3><p>High-visibility safety jacket for industrial &amp; traffic use.</p><div class="price">₹1,250 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Safety%20Jacket" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+        <article class="pcard" data-cat="jackets">
+          <div class="photo"><img src="images/coat-combat-ia.jpeg" alt="Combat coat IA 3 layer" loading="lazy" /></div>
+          <div class="body"><span class="cat">Combat</span><h3>Combat Coat IA (3-Layer)</h3><p>Three-layer combat coat for extreme field conditions.</p><div class="price">On request</div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Combat%20Coat%20IA%203%20Layer" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+        <article class="pcard" data-cat="jackets">
           <div class="photo"><img src="images/army-uniform.jpg" alt="Army uniform set" loading="lazy" /></div>
           <div class="body"><span class="cat">Uniform</span><h3>Army Uniform (Set)</h3><p>Cotton full-sleeve uniform — T-shirt &amp; pant, green.</p><div class="price">₹1,450 <span>/ set*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Army%20Uniform%20Set" target="_blank" rel="noopener">Enquire →</a></div>
         </article>
         <article class="pcard" data-cat="jackets">
-          <div class="photo"><img src="images/combat-cargo.jpg" alt="Combat cargo" loading="lazy" /></div>
+          <div class="photo"><img src="images/combat-cargo.jpg" alt="Combat cargo trousers" loading="lazy" /></div>
           <div class="body"><span class="cat">Uniform</span><h3>Combat Cargo</h3><p>Cotton combat-style cargo trousers.</p><div class="price">On request</div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Combat%20Cargo" target="_blank" rel="noopener">Enquire →</a></div>
         </article>
+        <article class="pcard" data-cat="jackets">
+          <div class="photo"><img src="images/track-craft-combat-cargo.jpg" alt="Combat cargo track" loading="lazy" /></div>
+          <div class="body"><span class="cat">Uniform</span><h3>Combat Cargo Track</h3><p>Combat-style cargo track trousers.</p><div class="price">On request</div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Combat%20Cargo%20Track" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+        <article class="pcard" data-cat="jackets">
+          <div class="photo"><img src="images/school-pt-dress.png" alt="School PT dress" loading="lazy" /></div>
+          <div class="body"><span class="cat">Institutional</span><h3>School PT Dress</h3><p>School physical-training dress set.</p><div class="price">₹900 <span>/ set*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20School%20PT%20Dress" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+        <article class="pcard" data-cat="jackets">
+          <div class="photo"><img src="images/plain-tshirt.jpg" alt="Plain white t-shirt" loading="lazy" /></div>
+          <div class="body"><span class="cat">Basics</span><h3>Plain White T-Shirt</h3><p>Men's plain cotton T-shirt for PT and daily wear.</p><div class="price">₹220 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Plain%20White%20T-Shirt" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
 
-        <!-- TRACK SUITS -->
-        <article class="pcard" data-cat="tracksuits">
+        <!-- ===== RAINWEAR ===== -->
+        <article class="pcard" data-cat="rain">
+          <div class="photo"><img src="images/rain-suit.jpg" alt="Polyester rain suit" loading="lazy" /></div>
+          <div class="body"><span class="cat">Rainwear</span><h3>Polyester Rain Suit</h3><p>Waterproof polyester rain suit (jacket &amp; trouser).</p><div class="price">₹550 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Polyester%20Rain%20Suit" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+        <article class="pcard" data-cat="rain">
+          <div class="photo"><img src="images/rain-coat.jpg" alt="Rain coat" loading="lazy" /></div>
+          <div class="body"><span class="cat">Rainwear</span><h3>Rain Coat</h3><p>Polyester waterproof rain coat.</p><div class="price">₹650 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Rain%20Coat" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+        <article class="pcard" data-cat="rain">
+          <div class="photo"><img src="images/rain-poncho.jpg" alt="Rain poncho" loading="lazy" /></div>
+          <div class="body"><span class="cat">Rainwear</span><h3>Rain Poncho</h3><p>Field rain poncho with hood for full cover.</p><div class="price">₹850 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Rain%20Poncho" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+
+        <!-- ===== TRACK SUITS ===== -->
+        <article class="pcard" data-cat="track">
           <div class="photo"><img src="images/tracksuit-school.png" alt="School tracksuit" loading="lazy" /></div>
           <div class="body"><span class="cat">Track Suit</span><h3>School Tracksuit</h3><p>Breathable school tracksuit in required colours.</p><div class="price">₹650 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20School%20Tracksuit" target="_blank" rel="noopener">Enquire →</a></div>
         </article>
-        <article class="pcard" data-cat="tracksuits">
+        <article class="pcard" data-cat="track">
           <div class="photo"><img src="images/tracksuit-ncc.png" alt="NCC track suit" loading="lazy" /></div>
           <div class="body"><span class="cat">Track Suit</span><h3>NCC Track Suit</h3><p>NCC-spec track suit set.</p><div class="price">₹450 <span>/ set*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20NCC%20Track%20Suit" target="_blank" rel="noopener">Enquire →</a></div>
         </article>
-        <article class="pcard" data-cat="tracksuits">
+        <article class="pcard" data-cat="track">
           <div class="photo"><img src="images/tracksuit-winter.jpg" alt="Winter tracksuit" loading="lazy" /></div>
           <div class="body"><span class="cat">Track Suit</span><h3>Winter Tracksuit</h3><p>Warm winter tracksuit for cold-weather training.</p><div class="price">₹750 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Winter%20Tracksuit" target="_blank" rel="noopener">Enquire →</a></div>
         </article>
+        <article class="pcard" data-cat="track">
+          <div class="photo"><img src="images/poly-tracksuit.jpg" alt="Polyester track suit" loading="lazy" /></div>
+          <div class="body"><span class="cat">Track Suit</span><h3>Polyester Track Suit</h3><p>Durable polyester track suit for sports &amp; PT.</p><div class="price">₹550 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Polyester%20Track%20Suit" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+        <article class="pcard" data-cat="track">
+          <div class="photo"><img src="images/poly-tracksuit-2.jpg" alt="Black and blue polyester track suit" loading="lazy" /></div>
+          <div class="body"><span class="cat">Track Suit</span><h3>Black &amp; Blue Track Suit</h3><p>Two-tone polyester track suit.</p><div class="price">₹550 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Black%20and%20Blue%20Track%20Suit" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
 
-        <!-- BAGS & KIT -->
+        <!-- ===== BAGS & KIT ===== -->
         <article class="pcard" data-cat="bags">
           <div class="photo"><img src="images/kit-bag.jpg" alt="Universal kit bag" loading="lazy" /></div>
           <div class="body"><span class="cat">Kit &amp; Bags</span><h3>Universal Kit Bag</h3><p>Waterproof polyester kit bag with 3 zippers.</p><div class="price">₹850 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Universal%20Kit%20Bag" target="_blank" rel="noopener">Enquire →</a></div>
@@ -237,21 +321,33 @@
           <div class="body"><span class="cat">Kit &amp; Bags</span><h3>Rucksack Backpack (80L)</h3><p>Large-capacity field rucksack for load carrying.</p><div class="price">On request</div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Rucksack%20Backpack" target="_blank" rel="noopener">Enquire →</a></div>
         </article>
 
-        <!-- SLEEPING BAGS -->
-        <article class="pcard" data-cat="sleeping">
+        <!-- ===== SLEEPING BAGS ===== -->
+        <article class="pcard" data-cat="sleep">
           <div class="photo"><img src="images/sleeping-bag-4ply.jpg" alt="4 ply sleeping bag" loading="lazy" /></div>
           <div class="body"><span class="cat">Sleeping Bag</span><h3>4-Ply Sleeping Bag</h3><p>Polyester, 7 ft, 60 cm width — made in India.</p><div class="price">₹2,500 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%204%20Ply%20Sleeping%20Bag" target="_blank" rel="noopener">Enquire →</a></div>
         </article>
-        <article class="pcard" data-cat="sleeping">
+        <article class="pcard" data-cat="sleep">
           <div class="photo"><img src="images/sleeping-bag-7ft.jpg" alt="7 feet sleeping bag" loading="lazy" /></div>
           <div class="body"><span class="cat">Sleeping Bag</span><h3>7-Feet Sleeping Bag</h3><p>Waterproof, military colour, hand-wash, 7 ft.</p><div class="price">₹1,200 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%207%20Feet%20Sleeping%20Bag" target="_blank" rel="noopener">Enquire →</a></div>
         </article>
-        <article class="pcard" data-cat="sleeping">
+        <article class="pcard" data-cat="sleep">
           <div class="photo"><img src="images/sleeping-bag-fleece.png" alt="Fleece sleeping bag" loading="lazy" /></div>
           <div class="body"><span class="cat">Sleeping Bag</span><h3>Fleece Sleeping Bag</h3><p>Micro with fleece insulation, 1.5 kg (JE-F-300).</p><div class="price">₹1,450 <span>/ pc*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Fleece%20Sleeping%20Bag" target="_blank" rel="noopener">Enquire →</a></div>
         </article>
 
-        <!-- GENERATORS -->
+        <!-- ===== TENTS & CAMP ===== -->
+        <article class="pcard" data-cat="camp">
+          <div class="photo"><img src="images/tent.jpg" alt="Custom military tent" loading="lazy" /></div>
+          <div class="body"><span class="cat">Camp</span><h3>Custom Tent</h3><p>Custom-made tents for field and camp deployment.</p><div class="price">On request</div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Custom%20Tent" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+
+        <!-- ===== RATIONS / RTE FOOD ===== -->
+        <article class="pcard" data-cat="food">
+          <div class="photo"><img src="images/food-heat-eat.png" alt="Ready to eat meals" loading="lazy" /></div>
+          <div class="body"><span class="cat">Rations</span><h3>Ready-to-Eat Meals (RTE)</h3><p>Heat-and-eat &amp; canned ready-to-eat field rations and Indian curries.</p><div class="price">On request</div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%20Ready%20to%20Eat%20Meals" target="_blank" rel="noopener">Enquire →</a></div>
+        </article>
+
+        <!-- ===== GENERATORS ===== -->
         <article class="pcard" data-cat="power">
           <div class="photo"><img src="images/gen-25kva.jpg" alt="25 kVA generator" loading="lazy" /></div>
           <div class="body"><span class="cat">Generator</span><h3>25 kVA Ashok Leyland DG</h3><p>SP/TP CSH, CPCB-IV+ silent DG set, 3 cylinder.</p><div class="price">₹5,80,000 <span>/ unit*</span></div><a class="enquire" href="https://wa.me/919419288058?text=Quote%3A%2025%20kVA%20Generator" target="_blank" rel="noopener">Enquire →</a></div>

@@ -45,7 +45,7 @@
   document.querySelectorAll('#prodGrid .pcard').forEach(function (card) {
     var thumbs = card.querySelector('.thumbs');
     if (!thumbs) return;
-    var main = card.querySelector('.photo img');
+    var main = card.querySelector('.photo > img');
     thumbs.addEventListener('click', function (e) {
       var btn = e.target.closest('.thumb');
       if (!btn) return;
@@ -91,7 +91,7 @@
   function open(card, startSrc) {
     var thumbs = card.querySelectorAll('.thumbs .thumb img');
     imgs = thumbs.length ? Array.prototype.map.call(thumbs, function (t) { return t.src; })
-                         : [card.querySelector('.photo img').src];
+                         : [card.querySelector('.photo > img').src];
     var h = card.querySelector('h3');
     title = h ? h.textContent : '';
     idx = Math.max(0, imgs.indexOf(startSrc));
@@ -102,7 +102,7 @@
   function shut() { lb.classList.remove('open'); document.body.style.overflow = ''; }
   function go(n) { idx = (n + imgs.length) % imgs.length; render(); }
 
-  document.querySelectorAll('#prodGrid .pcard .photo img').forEach(function (img) {
+  document.querySelectorAll('#prodGrid .pcard .photo > img').forEach(function (img) {
     img.addEventListener('click', function () { open(img.closest('.pcard'), img.src); });
   });
   prev.addEventListener('click', function () { go(idx - 1); });
