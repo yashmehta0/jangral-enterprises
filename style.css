@@ -126,46 +126,6 @@ header.nav {
 .hero-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 2px; }
 .tag { font-size: .78rem; font-weight: 600; letter-spacing: .04em; background: var(--surface); border: 1px solid var(--line); color: var(--ink-soft); padding: 6px 12px; border-radius: 100px; }
 
-/* ---------- FEATURED CAROUSEL ---------- */
-.carousel { position: relative; max-width: var(--maxw); margin: 0 auto; }
-.carousel-frame {
-  position: relative; border-radius: 16px; overflow: hidden; border: 1px solid var(--line);
-  background: var(--surface-2); box-shadow: var(--shadow); aspect-ratio: 16 / 8;
-}
-@media (max-width: 640px) { .carousel-frame { aspect-ratio: 4 / 5; } }
-.slide {
-  position: absolute; inset: 0; opacity: 0; visibility: hidden;
-  transition: opacity .6s ease; display: grid; grid-template-columns: 1.1fr 1fr;
-}
-@media (max-width: 640px) { .slide { grid-template-columns: 1fr; grid-template-rows: 1fr auto; } }
-.slide.active { opacity: 1; visibility: visible; }
-.slide .s-photo { background: #fff; overflow: hidden; }
-.slide .s-photo img { width: 100%; height: 100%; object-fit: cover; }
-.slide .s-text {
-  padding: clamp(20px, 4vw, 44px); display: flex; flex-direction: column; justify-content: center; gap: 12px;
-  background: var(--surface);
-}
-.slide .s-cat { font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; font-weight: 700; color: var(--brass); }
-.slide .s-text h3 { font-size: clamp(1.4rem, 3.2vw, 2.2rem); font-weight: 800; letter-spacing: -.01em; }
-.slide .s-text p { color: var(--ink-soft); font-size: 1rem; }
-.slide .s-text .btn { align-self: flex-start; margin-top: 6px; }
-.car-btn {
-  position: absolute; top: 50%; transform: translateY(-50%); z-index: 5;
-  width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line);
-  background: color-mix(in srgb, var(--surface) 90%, transparent); color: var(--ink);
-  display: grid; place-items: center; cursor: pointer; font-size: 1.3rem; line-height: 1;
-  backdrop-filter: blur(6px); transition: background .15s ease, transform .15s ease;
-}
-.car-btn:hover { background: var(--accent); color: #fff; }
-.car-btn.prev { left: 14px; } .car-btn.next { right: 14px; }
-.car-btn:hover { transform: translateY(-50%) scale(1.06); }
-.car-dots { display: flex; gap: 9px; justify-content: center; margin-top: 18px; }
-.car-dots button {
-  width: 9px; height: 9px; border-radius: 50%; border: none; padding: 0; cursor: pointer;
-  background: var(--line); transition: background .2s ease, transform .2s ease;
-}
-.car-dots button.active { background: var(--accent); transform: scale(1.35); }
-
 /* ---------- CATEGORY SHORTCUT TILES ---------- */
 .cat-tiles { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
 @media (max-width: 900px) { .cat-tiles { grid-template-columns: repeat(3, 1fr); } }
