@@ -310,6 +310,7 @@ section { padding: 66px 0; }
 .person .who { font-weight: 800; font-size: 1.2rem; }
 .person .role { color: var(--ink-soft); font-size: .9rem; }
 .contact-lines { display: grid; gap: 2px; margin-bottom: 24px; }
+.person-divider { height: 1px; background: var(--line); margin: 2px 0 22px; }
 .cline { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-top: 1px solid var(--line); text-decoration: none; }
 .cline:last-child { border-bottom: 1px solid var(--line); }
 .cline .ci { width: 40px; height: 40px; border-radius: 9px; flex: none; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); }
@@ -326,6 +327,19 @@ a.cline:hover .v { color: var(--accent); }
 .addr .k { font-size: .74rem; text-transform: uppercase; letter-spacing: .14em; color: var(--accent); font-weight: 700; }
 .addr .v { color: var(--ink); font-weight: 600; }
 .hours { color: var(--ink-soft); font-size: .95rem; }
+.next-steps { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px 24px; }
+.next-steps .k { font-size: .74rem; text-transform: uppercase; letter-spacing: .14em; color: var(--accent); font-weight: 700; display: block; margin-bottom: 14px; }
+.next-steps ol { margin: 0; padding: 0; list-style: none; counter-reset: step; display: grid; gap: 14px; }
+.next-steps li { position: relative; padding-left: 40px; color: var(--ink-soft); font-size: .95rem; line-height: 1.5; counter-increment: step; }
+.next-steps li strong { color: var(--ink); }
+.next-steps li::before {
+  content: counter(step); position: absolute; left: 0; top: 0;
+  width: 26px; height: 26px; border-radius: 50%; background: var(--accent-soft); color: var(--accent);
+  display: grid; place-items: center; font-weight: 800; font-size: .85rem;
+}
+.trust-row .k { font-size: .74rem; text-transform: uppercase; letter-spacing: .14em; color: var(--accent); font-weight: 700; display: block; margin-bottom: 12px; }
+.trust-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.tchip { font-size: .78rem; font-weight: 700; padding: 6px 12px; border-radius: 100px; background: var(--accent-soft); color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent); }
 
 /* ---------- CTA BAND ---------- */
 .cta-band { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
